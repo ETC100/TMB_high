@@ -9,3 +9,5 @@ Real-world application of tumor mutational burden-high (TMB-high) and microsatel
 5. ICI drug: pembrolizumab
 The main result:
 Among MSI-H and TMB-H patients, median PFS for patients who received chemotherapy alone versus immunotherapy alone was 6.75 months [95% confidence interval (95% CI), 3.9-10.9 months] and 24.2 months (95% CI, 9.6 months to not reached), respectively, with a P value of 0.042
+
+https://github.com/ETC100/TMB_high/blob/main/IMG/Real_world.jpg
