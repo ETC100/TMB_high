@@ -24,3 +24,10 @@ Prognostic Value: In some cancer types, high TMB has been associated with improv
 Research and Clinical Trials: Identifying patients with high TMB is crucial for conducting research studies and clinical trials focused on immunotherapy and targeted therapies. By including patients with high TMB, researchers can evaluate the efficacy and safety of novel treatments in a specific subgroup of patients.
 
 Overall, identifying patients with high TMB is essential for optimizing cancer treatment strategies, improving patient outcomes, advancing research in the field of immuno-oncology, and moving towards more personalized and effective cancer care.
+
+# The threshold for TMB-high
+In fact, there is no efficient way to determine the TMB-high threshold. The golden standard for determining the TMB-high threshold involves identifying TMB values where there is a significant improvement in ICI treatment outcomes. Sequencer, sequencing panel, cancer species, and ICI drugs used have a significant impact on TMB high.
+So, obviously, here are several strategies for TMB-high threshold determination:
+1. To practice, as the golden standard requires
+2. Use the hard thresholding presented by FDA, such as > 10 mu/Mb for pembrolizumab user
+3. Use the soft thresholding presented by statistics, this method will be mainly discussed in this article
