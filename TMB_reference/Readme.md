@@ -14,7 +14,51 @@ Among MSI-H and TMB-H patients, median PFS for patients who received chemotherap
 
 # Reference 2
 Analysis of 100,000 human cancer genomes reveals the landscape of tumor mutational burden
-1.Why consider synonymous mutations: While synonymous mutations are not likely to be directly involved in creating immunogenicity, their presence is a signal of mutational processes that will also have resulted in nonsynonymous mutations and neoantigens elsewhere in the genome
-2.The relationship between TMB and MSI: MSI-high -> TMB-high, however, TMB-high does not mean MSI-high.
+1. Attitude to TMB for perdiction of ICIs response: positive
+2.Why consider synonymous mutations: While synonymous mutations are not likely to be directly involved in creating immunogenicity, their presence is a signal of mutational processes that will also have resulted in nonsynonymous mutations and neoantigens elsewhere in the genome
+3.The relationship between TMB and MSI: MSI-high -> TMB-high, however, TMB-high does not often mean MSI-high.
 The vast majority of MSI-High samples also had high TMB (83%), and 97% had TMB ≥10 mutations/Mb. However, the converse was not true; only 16% of samples with high TMB were classified as MSI-High
-3.
+
+# Reference 3
+Initial results from a phase II study of nivolumab (NIVO) plus ipilimumab (IPI) for the treatment of metastatic castrationresistant prostate cancer
+Drug: nivolumab
+This study use median as threshold for TMB-high identification, which was up to 74.5
+Result: Higher TMB was predictive of better RR and longer PFS
+Given that there is currently no established threshold for nivolumab, I think researchers may find it imperative to utilize soft thresholding as a flexible approach in their investigations
+
+# Reference 4
+We can see other studies using nivolumab for ICI therapy.
+Genomic biomarkers of response to nivolumab/ipilimumab (nivo/ipi) and nivolumab (nivo) monotherapy in 108 patients with advanced renal cell carcinoma
+Drug: nivolumab
+Soft threshold: 64 mut/Mb, according to median
+
+# Reference 5
+Genomic biomarkers of response to nivolumab/ipilimumab (nivo/ipi) and nivolumab (nivo) monotherapy in 108 patients with advanced renal cell carcinoma
+Drug: nivolumab
+Soft threshold: high ≥167, medium 85–166, low <85
+TMB was defined as the total number of missense somatic mutations per tumor, and was evaluated as a continuous variable and by tertiles
+Higher TMB correlated with better RR and longer PFS
+
+# Reference 6
+Genomic biomarkers of response to nivolumab/ipilimumab (nivo/ipi) and nivolumab (nivo) monotherapy in 108 patients with advanced renal cell carcinoma
+Drug: nivolumab or nivo+ipi
+Strantegy: WES, no panel
+Soft threshold: TMB high (≥248 mut) vs medium (143-247 mut) vs low (<143 mut)
+High TMB predicted better efficacy for the combination compared.to nivolumab
+
+# Reference 7
+Pembrolizumab in Patients With Tumors With High Tumor Mutational Burden: Results From the Targeted Agent and Profiling Utilization Registry Study
+Drug: Pembrolizumab
+Hard threshold: ≥9 mutations per megabase
+Strantegy: Unknown
+Pembrolizumab demonstrated antitumor activity in pretreated patients with advanced cancers and HTMB
+This ariticle is not open access
+
+# Reference 8
+Pembrolizumab in Patients With Metastatic Breast Cancer With High Tumor Mutational Burden: Results From the Targeted Agent and Profiling Utilization Registry (TAPUR) Study
+Sample size: 28
+Drug: Pembrolizumab
+threshold: HTMB as ≥ 9 Mut/Mb measured by the Foundation Medicine’s (Cambridge, MA) FoundationOne assay
+Strantegy:
+1. There was variation in the TMB among the breast cancer subsets with the highest median TMB observed in triple-negative tumors and the lowest in HER2-negative and ER-positive or progesterone receptor–positive tumors. In this series, anecdotal responses to CPIs were noted in high tumor mutational burden (HTMB) tumors
+2. This study support the recent US Food and Drug Administration approval of pembrolizumab for treatment of patients with unresectable or metastatic solid tumors with HTMB without alternative treatment options.
