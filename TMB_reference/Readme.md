@@ -59,6 +59,6 @@ Pembrolizumab in Patients With Metastatic Breast Cancer With High Tumor Mutation
 Sample size: 28
 Drug: Pembrolizumab
 threshold: HTMB as ≥ 9 Mut/Mb measured by the Foundation Medicine’s (Cambridge, MA) FoundationOne assay
-Strantegy:
+Strantegy: Unknown
 1. There was variation in the TMB among the breast cancer subsets with the highest median TMB observed in triple-negative tumors and the lowest in HER2-negative and ER-positive or progesterone receptor–positive tumors. In this series, anecdotal responses to CPIs were noted in high tumor mutational burden (HTMB) tumors
 2. This study support the recent US Food and Drug Administration approval of pembrolizumab for treatment of patients with unresectable or metastatic solid tumors with HTMB without alternative treatment options.
