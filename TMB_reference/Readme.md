@@ -61,4 +61,9 @@ Drug: Pembrolizumab
 threshold: HTMB as ≥ 9 Mut/Mb measured by the Foundation Medicine’s (Cambridge, MA) FoundationOne assay
 Strantegy: Unknown
 1. There was variation in the TMB among the breast cancer subsets with the highest median TMB observed in triple-negative tumors and the lowest in HER2-negative and ER-positive or progesterone receptor–positive tumors. In this series, anecdotal responses to CPIs were noted in high tumor mutational burden (HTMB) tumors
-2. This study support the recent US Food and Drug Administration approval of pembrolizumab for treatment of patients with unresectable or metastatic solid tumors with HTMB without alternative treatment options.
+2. This study support the recent US Food and Drug Administration approval of pembrolizumab for treatment of patients with unresectable or metastatic solid tumors with HTMB without alternative treatment options
+
+# Reference 9
+Establishing guidelines to harmonize tumor mutational burden (TMB): in silico assessment of variation in TMB quantification across diagnostic platforms: phase I of the Friends of Cancer Research TMB Harmonization Project
+Result: Lastly, the eight cancers in stratum 1 were analyzed separately. UCEC, BLCA and COAD had the broadest range of slope values (UCEC: range 0.755–1.602, ∆ 0.847; BLCA: range 1.042–1.79, ∆ 0.748; COAD: range 0.75–1.486, ∆ 0.736) (figure 2, online supplementary table 4), and most laboratories consistently overestimated these cancer types, with BLCA as the only cancer type for which all 11 laboratories (100%) consistently overestimated their panel TMB values relative to WES TMB. Conversely, LUAD, LUSC and HNSC had the tightest range of slope values with no consistent bias to overestimating or underestimating TMB (LUAD: range 0.817–1.135, ∆ 0.318; LUSC: range 0.741–1.099, ∆ 0.358; HNSC: range 0.854–1.244, ∆ 0.39).
+![image] (https://github.com/ETC100/TMB_high/blob/main/IMG/WES_panels.jpg)
