@@ -30,4 +30,18 @@ In fact, there is no efficient way to determine the TMB-high threshold. The gold
 So, obviously, here are several strategies for TMB-high threshold determination:
 1. To practice, as the golden standard requires
 2. Use the hard thresholding presented by FDA, such as > 10 mu/Mb for pembrolizumab user
-3. Use the soft thresholding presented by statistics, this method will be mainly discussed in this article
+3. Use the soft thresholding presented by statistics, this method will be mainly discussed here
+
+# Soft thresholding determination
+We assumed that there is only data for TMB score and microsatellite stability status, without data for ICI outcomes
+According to the previous reference, when high TMB scores cause, MSI (microsatellite instability) may casue (<20%), however, when MSI caused, high TMB scores are highly probably cause (>80%).
+Here, I used WES and a unofficial panel covering 3.2 Mb gene exon regions. The first thing is to verfy the "consistence" between TMB scores from WES and unofficial panel.
+```R
+## cosine similarity
+df <- read.table('TMB_score_WES.txt', sep='\t', header = TRUE)
+tmb <- df$TMB_score
+wes <- df$WES
+sum(tmb*wes) / (sqrt(sum(tmb^2))*sqrt(sum(wes^2))) ## 0.9923412
+
+cor.test(tmb, wes, method=c("spearman")) ## 0.9217614 
+```R
