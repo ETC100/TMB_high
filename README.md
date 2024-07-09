@@ -43,5 +43,6 @@ tmb <- df$TMB_score
 wes <- df$WES
 sum(tmb*wes) / (sqrt(sum(tmb^2))*sqrt(sum(wes^2))) ## 0.9923412
 
+## spearman correlation
 cor.test(tmb, wes, method=c("spearman")) ## 0.9217614 
-```R
+```
