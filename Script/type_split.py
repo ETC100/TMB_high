@@ -28,7 +28,7 @@ def split_store(merged_file, store_path):
         file_name = f"{type_val}_data.tsv"
         output_path = store_path + '/' + file_name
         sub_df.to_csv(output_path, index=False, sep='\t', encoding='utf')
-        print(f"保存 {type_val} 类型数据到 {file_name}")
+        print(f"save {type_val} to {file_name}")
 
 ## extract the sample id according to Link column and fill the sample id
 def extract_sample_id(link):
