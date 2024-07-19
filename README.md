@@ -33,9 +33,8 @@ So, obviously, here are several strategies for TMB-high threshold determination:
 3. Use the soft thresholding presented by statistics, this method will be mainly discussed here
 
 # Soft thresholding determination
-We assumed that there is only data for TMB score and microsatellite stability status, without data for ICI outcomes
-According to the previous reference, when high TMB scores cause, MSI (microsatellite instability) may casue (<20%), however, when MSI caused, high TMB scores are highly probably cause (>80%).
-Here, I used WES and a unofficial panel covering 3.2 Mb gene exon regions. The first thing is to verfy the "consistence" between TMB scores from WES and unofficial panel.
+We assumed that there is only one dimension TMB score data without ICI outcomes in a big dataframe, which is calculated by filtered VCF file, with no germline or low-quality variants.
+Here, I used WES and a unofficial panel covering 2.01 Mb gene exon regions. The first thing is to verfy the "consistence" between TMB scores from WES and unofficial panel.
 ```R
 ## cosine similarity
 df <- read.table('TMB_score_WES.txt', sep='\t', header = TRUE)
@@ -46,3 +45,22 @@ sum(tmb*wes) / (sqrt(sum(tmb^2))*sqrt(sum(wes^2))) ## 0.9923412
 ## spearman correlation
 cor.test(tmb, wes, method=c("spearman")) ## 0.9217614 
 ```
+Undoubtedly, the panel is qualified for the high correlation.
+Then, we need to split the big dataframe according to the cancer type using type_split.py script.
+```python
+## split merged file into small dataframe according to cancer type
+def split_store(merged_file, store_path):
+    df = merged_file
+    dfs = {}
+    for type_val, group in df.groupby('cancer_type'):
+        dfs[type_val] = group
+        
+    for type_val, sub_df in dfs.items():
+        file_name = f"{type_val}_data.tsv"
+        output_path = store_path + '/' + file_name
+        sub_df.to_csv(output_path, index=False, sep='\t', encoding='utf')
+        print(f"save {type_val} to {file_name}")
+```
+There are several methods for one-dimension data cluster, such as Kmeans and Jerks. Here I recommond Kmeans, because Jerks cost too much time, and never output the center for each cluster.
+The script used in this ariticle were KMeans4one_dimension.py and Jerks.py.
+I selected non-small cell lung cancer as an example, with 86 pantients, outputing 6.111765 as the result, while 75 and 80 quantiles were 8.375 and 9.5 respectively.
