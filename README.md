@@ -63,4 +63,4 @@ def split_store(merged_file, store_path):
 ```
 There are several methods for one-dimension data cluster, such as Kmeans and Jerks. Here I recommond Kmeans, because Jerks cost too much time, and never output the center for each cluster.
 The script used in this ariticle were KMeans4one_dimension.py and Jerks.py.
-I selected non-small cell lung cancer as an example, with 86 pantients, outputing 6.111765 as the result, while 75 and 80 quantiles were 8.375 and 9.5 respectively.
+I selected non-small cell lung cancer as an example, with 86 pantients, outputing 6.111765 as the result, while 75 and 80 quantiles were 8.375 and 9.5 respectively. In general, as clinical trial do, they prefered median/quantile75/quantile80 as the TMB-high score threshold. I thind their choices are true, because we don't need to consider too much for one dimensional data.
